@@ -13,29 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # -------------------------
-      # Setup Node Environment
-      # -------------------------
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      # -------------------------
-      # Install Dependencies
-      # -------------------------
-      - name: Install Dependencies
-        run: npm install
-
-      # -------------------------
-      # Generate PDF from HTML
-      # -------------------------
-      - name: Generate Resume PDF
-        run: npm run generate-pdf
-
-      # -------------------------
-      # Upload Everything to Azure
-      # -------------------------
       - name: Upload to Azure Storage
         uses: azure/CLI@v1
         with:

@@ -6,6 +6,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             .scrollIntoView({ behavior: 'smooth' });
     });
 });
-function downloadResume() {
-    window.location.href = "resume.pdf";
-}
