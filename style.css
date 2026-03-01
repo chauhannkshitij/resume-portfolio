@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background:#f4f9ff;              /* Light blue-white */
+    color:#0f172a;                   /* Dark navy text */
+    line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#0b3d91;              /* Dark Blue */
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    color:#ffffff;
+    font-weight:600;
+}
+
+nav a{
+    color:#ffffff;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#90cdf4;                   /* Light blue hover */
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:60px 10%;
+}
+
+.section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    color:#0b3d91;
+    border-left:5px solid #1d4ed8;
+    padding-left:10px;
+}
+
+/* ===== CARDS ===== */
+.card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 18px rgba(29,78,216,0.2);
+}
+
+/* ===== SKILLS ===== */
+.skills span{
+    display:inline-block;
+    background:#1d4ed8;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    background:#0b3d91;
+}
+
+/* ===== BUTTON ===== */
+button{
+    margin-top:20px;
+    padding:10px 22px;
+    background:#1d4ed8;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0b3d91;
+}
+
+/* ===== LINKS ===== */
+a{
+    color:#1d4ed8;
+}
+
+a:hover{
+    color:#0b3d91;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b3d91;
+    color:white;
+    margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+}
