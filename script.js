@@ -7,3 +7,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+function downloadResume() {
+    const link = document.createElement("a");
+    link.href = "resume.pdf";
+    link.download = "Kshitij_Chauhan_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
