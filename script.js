@@ -7,10 +7,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// Force PDF Download
 function downloadResume() {
     const link = document.createElement("a");
-    link.href = "resume.pdf";
+    link.href = "Kshitij_Chauhan_Resume.pdf";  // Exact filename
     link.download = "Kshitij_Chauhan_Resume.pdf";
     document.body.appendChild(link);
     link.click();
